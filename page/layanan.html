@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan Kami - KonstruksiIndo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-gray-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">KONTRUKSI<span class="text-yellow-400">:</span>INDO</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-yellow-400">Beranda</a>
+        <a href="layanan.html" class="hover:text-yellow-400">Layanan</a>
+        <a href="contact.html" class="hover:text-yellow-400">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Layanan dengan Overlay -->
+  <section class="relative bg-gray-900 text-white">
+    <!-- Background image -->
+    <img src="../image/restorasi.jpg" alt="Layanan Konstruksi" class="absolute inset-0 w-full h-full object-cover opacity-50">
+
+    <!-- Overlay warna gelap -->
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <!-- Konten -->
+    <div class="relative z-10 text-center px-6 py-32">
+      <h2 class="text-4xl font-bold mb-4">Layanan Konstruksi Terbaik untuk Anda</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Kami menyediakan berbagai layanan konstruksi profesional mulai dari perencanaan, pembangunan, renovasi, hingga pengawasan proyek. Semua dikerjakan oleh tim ahli dan berpengalaman.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-white mb-10">Layanan Kami</h2>
+    <div id="services-container" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Konten akan dimasukkan lewat JavaScript -->
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16 px-6 text-center mb-12 bg-gray-800 rounded-xl max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold text-white mb-4">Butuh Layanan Konstruksi Khusus?</h2>
+    <p class="text-gray-400 mb-6">Hubungi kami sekarang dan dapatkan solusi konstruksi terbaik untuk proyek Anda.</p>
+    <a href="contact.html" class="bg-yellow-500 text-black font-medium px-6 py-3 rounded-full hover:bg-yellow-400 transition">
+      Konsultasi Gratis
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+      <!-- Logo & Deskripsi -->
+      <div>
+        <h2 class="text-xl font-bold text-white mb-4">KonstruksiIndo</h2>
+        <p class="text-sm">
+          Membangun masa depan Indonesia dengan solusi konstruksi inovatif, aman, dan tepat waktu.
+        </p>
+      </div>
+
+      <!-- Navigasi -->
+      <div>
+        <h3 class="text-sm font-semibold text-white uppercase mb-4">Navigasi</h3>
+        <ul class="space-y-2">
+          <li><a href="#about" class="hover:text-white transition">Tentang Kami</a></li>
+          <li><a href="#services" class="hover:text-white transition">Layanan</a></li>
+          <li><a href="#projects" class="hover:text-white transition">Proyek</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div>
+        <h3 class="text-sm font-semibold text-white uppercase mb-4">Kontak</h3>
+        <ul class="space-y-2 text-sm">
+          <li>📍 Jakarta, Indonesia</li>
+          <li>📞 +62 895 0913 7208</li>
+          <li>✉️ info@konstruksiindo.com</li>
+        </ul>
+      </div>
+
+    <!-- Garis Bawah -->
+    <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+      © 2025 KonstruksiIndo. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const services = [
+        {
+          title: "Pembangunan Gedung",
+          description: "Kami menangani pembangunan gedung kantor, sekolah, rumah sakit, dan fasilitas umum lainnya.",
+          image: "../image/gedung.jpg"
+        },
+        {
+          title: "Desain Arsitektur",
+          description: "Tim arsitek kami siap merancang bangunan yang estetis, efisien, dan sesuai keinginan klien.",
+          image: "../image/building.png"
+        },
+        {
+          title: "Renovasi & Restorasi",
+          description: "Menghidupkan kembali bangunan lama dengan desain dan struktur baru tanpa meninggalkan karakter aslinya.",
+          image: "../image/restorasi.jpg"
+        },
+        {
+          title: "Manajemen Proyek",
+          description: "Kami mengatur waktu, biaya, dan mutu proyek secara profesional dari awal hingga selesai.",
+          image: "../image/manajemen.jpg"
+        },
+        {
+          title: "Jalan & Drainase",
+          description: "Pembangunan jalan akses dan sistem drainase untuk kawasan industri, perumahan, dan publik.",
+          image: "../image/drainase.jpg"
+        },
+        {
+          title: "Konsultasi Konstruksi",
+          description: "Memberikan arahan teknis dan perencanaan matang untuk hasil konstruksi yang optimal.",
+          image: "../image/konsultasi.jpg"
+        }
+      ];
+
+      const container = document.getElementById("services-container");
+      if (!container) {
+        console.error("Elemen #services-container tidak ditemukan!");
+        return;
+      }
+
+      services.forEach(({ title, description, image }) => {
+        const card = document.createElement("div");
+        card.className = "bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition";
+
+        card.innerHTML = `
+          <div class="relative">
+            <img src="${image}" alt="${title}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-5 bg-gray-800">
+            <h3 class="text-lg font-bold text-yellow-400 mb-2">${title}</h3>
+            <p class="text-sm text-gray-300">${description}</p>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    });
+</script>
+
+</body>
+</html>
